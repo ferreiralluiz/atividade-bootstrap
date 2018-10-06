@@ -44,8 +44,45 @@ header{
 	font-weight: bolder;
 	color: white;
 	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.header-conteudo h2{
+	color: white;
+	margin-bottom: 30px;
 }
 
 .header-conteudo a{
 	color: white;
+	margin-bottom: 30px;
+}
+
+.botao-solido{
+	background-color: #ff4e50;
+	padding: 10px 20px;
+	border-radius: 40px;
+	font-weight: bold;
+	display: inline-block;
+
+}
+
+@media (max-width: 500px) {
+	.header-conteudo{
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 20px;
+
+	}
+
+	.header-topo{
+		flex-direction: column;
+	}
+	.header-topo .logo{
+		order: 2;
+	}
+
+	.header-topo nav{
+		order: 1;
+		margin-bottom: 80px;
+	}
 }
